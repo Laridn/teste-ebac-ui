@@ -25,4 +25,12 @@ describe('Funcionalidade Página de Produtos', () => {
       quantidade + ' × “Atlas Fitness Tank” foram adicionados no seu carrinho.'
     );
   });
+
+  it('Deve adicionar produto no carrinho - Usando Comandos Customizados', () => {
+    cy.addProdutos('Atlas Fitness Tank', 'M', 'Blue', 3);
+  });
+
+  it('Deve adicionar produto no carrinho - Usando Comandos Customizados', () => {
+    cy.addProdutos('Abominable Hoodie', 'XS', 'Blue', 2);
+  });
 });
